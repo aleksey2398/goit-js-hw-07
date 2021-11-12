@@ -33,10 +33,10 @@ function choosePic(event) {
     if (event.target.nodeName !== "IMG") {
         return;
     }
-    const picture = (event.target.dataset.source);
+    const pic = (event.target.dataset.source);
 
     const instance = basicLightbox.create(`
-     <img src="${picture}" width="800" height="600">
+     <img src="${pic}" width="800" height="600">
 `);
 
 instance.show()
