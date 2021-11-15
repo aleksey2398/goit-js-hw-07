@@ -10,11 +10,11 @@ gallery.insertAdjacentHTML("beforeend", galleryItem);
 
 function createImgCard(galleryItems) {
     return galleryItems
-        .map(({ preview, original, desription }) => {
+        .map(({ preview, original, description }) => {
             return `
     <li>
     <a class="gallery__item" href="${original}">
-    <img class="gallery__image" src="${preview}" alt="${desription}" />
+    <img class="gallery__image" src="${preview}"alt="${description}"/>
     </a>
     </li>
     `}).join('');
@@ -22,8 +22,8 @@ function createImgCard(galleryItems) {
 new SimpleLightbox('.gallery a', {
     showCounter: false,
     disableScroll: false,
-    captionData: 'alt',
-    captionDelay: 250,
+    captionsData: "alt",
+    captionsDelay: 250,
     docClose: true,
 
 });

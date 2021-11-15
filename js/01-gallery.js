@@ -21,7 +21,7 @@ function createImgCard(galleryItems) {
       alt="${description}"
     />
   </a>
-</div
+</div>
 `}).join('');
 }
 
