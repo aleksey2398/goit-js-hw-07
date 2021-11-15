@@ -20,10 +20,10 @@ function createImgCard(galleryItems) {
     `}).join('');
 }
 new SimpleLightbox('.gallery a', {
-    showCounter: false,
-    disableScroll: false,
+    //showCounter: false,
+    //disableScroll: false,
     captionsData: "alt",
     captionsDelay: 250,
-    docClose: true,
+    //docClose: true,
 
 });
